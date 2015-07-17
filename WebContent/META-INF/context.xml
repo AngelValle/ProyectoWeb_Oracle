@@ -1,18 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Context docBase="ProyectoWebAngel" path="/ProyectoWebAngel" reloadable="true">
+<Context docBase="ProyectoWeb_Oracle" path="/ProyectoWeb_Oracle" reloadable="true">
 
-<Resource name="jdbc/MySQLDB" auth="Container" type="javax.sql.DataSource"/>
+  <Resource 
+      name="jdbc/MySQLDB" 
+      auth="Container" 
+      type="javax.sql.DataSource"/>
   
   <Resource 
-	name="jdbc/pool" 
-	auth="Container" 
-	type="javax.sql.DataSource"  
-	username="admin9uBlgm9" 
-	password="ntBtH1NQgtTx" 
-	driverClassName="com.mysql.jdbc.Driver"  
-	url="jdbc:mysql://proyectoangel-eltiempo.rhcloud.com:3306/proyectoangel" 
-	maxActive="8" 
-	maxIdle="8"/> 
+    name="jdbc/pool" 
+  	auth="Container" 
+  	type="javax.sql.DataSource"
+    maxIdle="30"  maxActive="10"
+    maxWaitMillis="10000"
+    username="HR" 
+    password="PASSWORD" 
+    driverClassName="oracle.jdbc.driver.OracleDriver"
+    url="jdbc:oracle:thin:@localhost:1521:xe"/> 
   
   
 </Context>
