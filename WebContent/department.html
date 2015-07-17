@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="Angel Valle" name="author">
+		<meta content="Pagina personal de Angel Valle" name="description">
+		<meta content="pagina, personal, angel, valle, angelvalle" name="keywords"> 
+		<title>angelvalle.com&reg;</title>
+	    <link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+	
+		<header>
+			<div id="navheaddiv" class="navheaddiv">
+	    		<nav id="navhead" class="navhead">
+	            	<a href="http://angelvalle.com" id="navheadlogo">Angelvalle.com</a>
+	        		<ul>
+	            		<li><a href="index.html">Inicio</a></li>
+		                <li><a href="proyectos.html">Proyectos</a></li>
+	    	            <li><a href="login.html">Login</a></li>
+	                	<li><a href="contacto.html">Contacto</a></li>
+	            	</ul>
+		        </nav>
+	    	</div>
+	    </header>
+    
+		<table align="center" bordercolor="BLACK" bgcolor="#FFFFFF">
+			<tr><th align="center" bgcolor="#BBBBBB" height="25" width="800">Ingresar ID de Departamento</th></tr>
+		</table>
+		<br>
+		<table align="center" bordercolor="BLACK" bgcolor="#FFFFFF" frame="above" width="800">
+			<tr>
+				<td>
+					<form action="ServletDepartment" method="get">
+						<p>ID Departamento: <select name="departmentname">    
+       							<option value="10" selected="selected">Administration</option>
+						       	<option value="20">Marketing</option>
+						       	<option value="30">Purchasing</option>
+						       	<option value="40">Human Resources</option>
+						       	<option value="50">Shipping</option>
+						       	<option value="60">IT</option>
+						       	<option value="70">Public Relations</option>
+						       	<option value="80">Sales</option>
+						       	<option value="90">Executive</option>
+						       	<option value="100">Finance</option>
+						       	<option value="110">Accounting</option>
+						       	<option value="120">Treasury</option>
+						       	<option value="130">Corporate Tax</option>
+						       	<option value="140">Control And Credit</option>
+						       	<option value="150">Shareholder Services</option>
+						       	<option value="160">Benefits</option>
+						       	<option value="170">Manufacturing</option>
+						       	<option value="180">Construction</option>
+						       	<option value="190">Contracting</option>
+						       	<option value="200">Operations</option>
+						       	<option value="210">IT Support</option>
+						       	<option value="220">NOC</option>
+						       	<option value="230">IT Helpdesk</option>
+						       	<option value="240">Government Sales</option>
+						       	<option value="250">Retail Sales</option>
+						       	<option value="260">Recruiting</option>
+						       	<option value="270">Payroll</option>
+  							</select><input type="submit" value="Enviar"></p>
+   					</form>
+				<!--
+					<form action="ServletDepartment" method="get">
+						<p>ID Departamento: <input type="text" name="iddepartment"></input><input type="submit" value="Enviar"></p>
+   					</form>
+   				-->
+				</td>
+			</tr>
+		</table>
+		
+		<div id="cuerpo">
+	    </div>
+		<!-- Marquee = Texto en movimiento (Pie de pagina)-->
+	<marquee class="marquee">
+		- Diseño echo por Angel Valle - Proyecto -
+	</marquee>
+		
+</body>
+</html>

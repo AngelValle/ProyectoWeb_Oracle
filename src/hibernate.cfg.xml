@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+         
+
+<!--         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> -->
+<!--         <property name="hibernate.connection.password">ntBtH1NQgtTx</property> -->
+<!--         <property name="hibernate.connection.url">jdbc:mysql://proyectoangel-eltiempo.rhcloud.com:3306/proyectoangel</property> -->
+<!--         <property name="hibernate.connection.username">admin9uBlgm9</property> -->
+<!--         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> -->
+
+        <property name="hibernate.connection.datasource">java:comp/env/jdbc/pool</property>
+        
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Mapping files -->
+        <mapping resource="Countries.hbm.xml"/>
+        <mapping resource="Departments.hbm.xml"/>
+        <mapping resource="EmpDetailsView.hbm.xml"/>
+        <mapping resource="Employees.hbm.xml"/>
+        <mapping resource="JobHistory.hbm.xml"/>
+        <mapping resource="Jobs.hbm.xml"/>
+        <mapping resource="Locations.hbm.xml"/>
+        <mapping resource="Regions.hbm.xml"/>
+        <mapping resource="Users.hbm.xml"/>
+        
+    </session-factory>
+
+</hibernate-configuration>
